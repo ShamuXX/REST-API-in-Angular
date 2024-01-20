@@ -1,1 +1,13 @@
-<p>home works!</p>
+
+<div class="container">
+    <div class="header">
+        <h2 class="title">Api Data List</h2>
+    </div>
+    <ul class="container">
+        <div *ngFor="let data of data.slice(0, 50)" class="card" >
+            <h3>{{data.title}}</h3>
+            <p>{{data.body}}</p>
+            <br>
+        </div>
+    </ul>
+</div>
